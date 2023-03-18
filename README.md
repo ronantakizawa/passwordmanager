@@ -1,6 +1,6 @@
-# React Native Todo App
-Simple React Native Todo App
+This is a simple password management mobile app built in React Native. 
 
-![React Native Todo App Screenshot](https://i.ibb.co/LtQNxC3/image.png)
+It includes cautionary security measures to protect sensitive data. 
 
-You can create task and delete them by clicking on any of the the blue squares. The App was created by following this [tutorial](https://www.youtube.com/watch?v=0kL6nhutjQ8), big thanks to Matt for creating this awesome tutorials.
+The app is available on expo:  https://expo.dev/@ronantakizawa/react-native-password-manager?serviceType=classic&distribution=expo-go
+

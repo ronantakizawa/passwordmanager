@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-todo-list",
-    "slug": "react-native-todo-list",
+    "name": "react-native-password-manager",
+    "slug": "react-native-password-manager",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

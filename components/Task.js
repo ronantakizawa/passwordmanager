@@ -1,24 +1,30 @@
 import React from 'react';
 import { View, Text, StyleSheet, Touchable, TouchableOpacity } from 'react-native';
-
+import { AntDesign } from '@expo/vector-icons';
 const Task = (props) => {
+
+    const handleDelete = (event) =>{
+        props.parentCallback(props.index);
+        event.preventDefault();
+    }
 
     return (
         <View style={styles.item}>
             <View style={styles.itemLeft}>
-                <View style={styles.square}></View>
-                <Text style={styles.itemText}>{props.text}</Text>
+                <Text style={styles.header}>{props.text}</Text>
             </View>
-            <View style={styles.circular}></View>
+            <TouchableOpacity>
+                <AntDesign name="closecircleo" size={20} color="red" onPress={handleDelete}/>
+            </TouchableOpacity>
         </View>
-    )
+    ) 
 }
 
 const styles = StyleSheet.create({
     item: {
         backgroundColor: '#FFF',
         padding: 15,
-        borderRadius: 10,
+        borderRadius: 50,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -39,15 +45,8 @@ const styles = StyleSheet.create({
         marginRight: 15,
     },
     itemText: {
-        maxWidth: '80%'
-    },
-    circular: {
-        width: 12,
-        height: 12,
-        borderColor: '#55BCF6',
-        borderWidth: 2,
-        borderRadius: 5, 
-    },
+        paddingLeft:20
+    }
 })
 
 export default Task;
